@@ -1,0 +1,17 @@
+Shutdown RPi automatically when wifi disconnected for more than 90 seconds
+
+Step1:
+put autoshutdown.py and autoshutdown.sh under /home/pi
+
+Step2:
+edit /etc/rc.local
+add the following line at the end of the file(before exit 0)
+sh /home/pi/autoshutdown.sh
+
+Step3:
+reboot RPi and check if autoshutdown works :)
+
+
+Reference:
+http://shumeipai.nxez.com/2017/01/25/raspberry-pi-wifi-broken-automatically-reconnect.html
+https://blog.csdn.net/c3poo/article/details/37932295
